@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cadastro | Organização Solidária</title>
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header role="banner" class="container header-area">
+    <nav aria-label="Navegação principal" class="nav-area">
+      <figure class="logo-area">
+        <img src="img/ceb5cf4a02d45fa49dc671e7d2014c32-icone-de-toque-de-aperto-de-mao.webp" alt="Logo" class="logo">
+        <figcaption class="titulo-site">Organização Solidária</figcaption>
+      </figure>
+
+      <button class="hamburger" aria-label="Abrir menu" id="hamburger-btn">☰</button>
+
+      <ul class="menu" id="main-menu" role="menubar">
+        <li role="none"><a role="menuitem" href="index.html">Início</a></li>
+        <li role="none"><a role="menuitem" href="projeto.html">Projetos</a></li>
+        <li role="none"><a role="menuitem" class="ativo" href="cadastro.html">Cadastro</a></li>
+      </ul>
+
+      <button id="contraste-btn" class="btn-contraste" aria-label="Ativar alto contraste">Contraste</button>
+    </nav>
+  </header>
+
+  <main role="main" class="container">
+
+    <header class="card col-12">
+      <h1>Cadastro de Voluntário</h1>
+      <p>
+        Faça parte do nosso time de voluntários e ajude a transformar vidas!
+        Preencha o formulário abaixo com suas informações para participar de nossos projetos sociais.
+      </p>
+      <figure>
+        <img src="img/funiber-concurso-publicacion-solidaria-ideas-solidarias.jpg" alt="Voluntários em ação">
+        <figcaption>Junte-se à nossa rede solidária.</figcaption>
+      </figure>
+    </header>
+
+    <section class="card col-12" aria-labelledby="titulo-form">
+      <h2 id="titulo-form">Formulário de Inscrição</h2>
+
+      <form id="cadastro-form" method="post" novalidate>
+        <fieldset>
+          <legend>Informações Pessoais</legend>
+
+          <label for="nome">Nome Completo:</label>
+          <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required placeholder="seuemail@email.com">
+
+          <label for="cpf">CPF:</label>
+          <input type="text" id="cpf" name="cpf" required placeholder="000.000.000-00">
+
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone" required placeholder="(00) 00000-0000">
+
+          <label for="nascimento">Data de Nascimento:</label>
+          <input type="date" id="nascimento" name="nascimento" required>
+
+          <label for="endereco">Endereço:</label>
+          <input type="text" id="endereco" name="endereco" placeholder="Rua, número, bairro">
+
+          <label for="cep">CEP:</label>
+          <input type="text" id="cep" name="cep" placeholder="00000-000">
+
+          <label for="cidade">Cidade:</label>
+          <input type="text" id="cidade" name="cidade">
+
+          <label for="estado">Estado:</label>
+          <input type="text" id="estado" name="estado">
+
+          <button type="submit" class="btn" id="submitBtn">Enviar Cadastro</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer role="contentinfo" class="container">
+    <figure>
+      <img src="img/ceb5cf4a02d45fa49dc671e7d2014c32-icone-de-toque-de-aperto-de-mao.webp" alt="Logo da Organização" class="footer-logo">
+    </figure>
+    <p>&copy; 2025 Organização Solidária. Todos os direitos reservados.</p>
+  </footer>
+
+  <dialog id="successDialog">
+    <article class="modal-content">
+      <h3>Cadastro Enviado!</h3>
+      <p>Obrigado! Sua inscrição foi recebida com sucesso.</p>
+      <menu>
+        <button class="btn" id="closeModal">Fechar</button>
+      </menu>
+    </article>
+  </dialog>
+
+  <script src="js/form.js"></script>
+  <script src="js/scripts.min.js"></script>
+</body>
+</html>
